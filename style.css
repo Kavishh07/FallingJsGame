@@ -1,0 +1,72 @@
+/* Er word padding en margin gebruikt als styles voor de game div. */
+*{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/* Alles wat te maken zal hebben met de vormgeving van de naam div zal hier in worden verwerkt. */
+#naam { 
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+    height: 120px;
+    color: whites;
+    border: 5px solid rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+/* Alles wat te maken zal hebben met de vormgeving van de game div zal hier in worden verwerkt. 
+1. De width, height & border zorgen ervoor dat er een speel vlak aan gemaakt word. 
+2. Margin auto zorgt ervoor de div in het midden gecentreert word.  */
+#game{
+    width: 400px;
+    height: 500px;
+    border: 5px solid rgb(255, 255, 255);
+    background-image: url("https://images2.alphacoders.com/941/thumb-1920-941898.jpg");
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Alles wat te maken zal hebben met de vormgeving van de karakter div zal hier in worden verwerkt. 
+ 1. De width & height geven de Grootte & breedte van de karakter aan. 
+ 2. De border-radius van 50% zorgt ervoor dat de karakter div een cirkel word. 
+ 3. De top zorgt voor de positie van het karakter div in de game div zelfde ook met de left.
+ 4. De z-index zorgt ervoor dat de karakter div altijd de top raakt. */
+#character{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 98, 0);
+    border-radius: 50%;
+    position: relative;
+    top: 400px;
+    left: 190px;
+    z-index: 1000000;
+}
+
+/* Alles wat te maken zal hebben met de vormgeving van de borders waarop de karakter div op zal bewegen zal hier in worden verwerkt. 
+1. De width & height geven de Grootte & breedte van de block div aan.
+2. De position is relative. 
+3. met de top word de hoogte in de game div aangegeven. */
+.block{
+    width: 400px;
+    height: 20px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
+
+/* Alles wat te maken zal hebben met de vormgeving van de holes waarin de karakter div in zal bewegen zal hier in worden verwerkt. 
+1. De width & height geven de Grootte & breedte van de hole div aan.
+2. De position is relative. 
+3. met de top word de hoogte in de game div aangegeven. */
+.hole{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(255, 98, 0);
+    position: relative;
+    top: 100px;
+    margin-top: -20px;
+}
